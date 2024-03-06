@@ -1,4 +1,4 @@
-# teste
+# ExerciseApp
 
 A new Flutter project.
 
