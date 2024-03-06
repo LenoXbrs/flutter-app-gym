@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:teste/_comum/minhas_cores.dart';
 import 'package:teste/modelos/exercicio_modelo.dart';
 import 'package:teste/modelos/sentimento_modelo.dart';
 
@@ -19,16 +20,16 @@ class ExercicioTela extends StatelessWidget {
       backgroundColor: Colors.blue,
       appBar: AppBar(title: Column(
       children: [
-        Text(exercicioModelo.nome, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22, color: Colors.white),),
-        Text(exercicioModelo.treino, style: TextStyle(fontSize: 17, color: Colors.white),),
+        Text(exercicioModelo.nome, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 22, color: Colors.white),),
+        Text(exercicioModelo.treino, style:const TextStyle(fontSize: 17, color: Colors.white),),
       ],
     
       ),
 
-      backgroundColor: Color(0xFF0A6D92),
+      backgroundColor: MinhasCores.azulEscuro,
       
       centerTitle: true,
-
+      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(bottom: Radius.circular(30))),
       ),
       floatingActionButton: FloatingActionButton(onPressed: ()=>{
         print('Foi clicado')
